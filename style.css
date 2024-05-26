@@ -1,0 +1,21 @@
+:root {
+    --color--header: #710393
+    --color--search: #3C014E
+    --color--barra: #2F013D
+    --color--lila: #B886C8
+    --color--blanconoblanco: #F2F2F2
+}
+
+.iconsuno {
+    width: 36px;
+    height: 36px;
+}
+
+
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+

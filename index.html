@@ -12,35 +12,35 @@
     <meta property="og.description" content="Bubblefy_music es la aplicación perfecta para los amantes de la música que buscan una experiencia auditiva excepcional. Con su interfaz intuitiva, amplias funciones y compatibilidad con una amplia gama de formatos de audio, Bubblefy_music te permite disfrutar de tu música favorita de la forma que más te guste.">
     <meta property="og.url" content="">
     <meta property="og.image" content="">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
-    <link rel="stylesheet" href="/assets/flor_logo.svg">
+    <link rel="shortcut icon" href="/assets/flor_logo.svg" type="image/x-icon"> 
+    <link rel="stylesheet" href="/style.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <main>
-        <header>
-            <nav>
-                <img src="/assets/tresrayas.svg" alt="icon_tres_rayas">
+        <header class="header">
+            <nav class="header__nav">
+                <img src="/assets/tresrayas.svg" alt="icon_tres_rayas" class="iconsuno">
                 <p>Discover</p>
-                <img src="/assets/account.svg" alt="icon_perfil">
+                <img src="/assets/account.svg" alt="icon_perfil" class="iconsuno">
             </nav>
         </header>
-        <section>
+        <section class="inicio">
             <h2>Welcome!</h2>
-            <form action="/">
-                <input type="text" class="" placeholder="Search">
+            <form action="/" class="inicio__form">
+                <input type="text"  placeholder="Search">
                 <button>
                     <img src="/assets/search.svg"
                 </button> 
             </form>
         </section>
-        <section>
-            <div>
+        <section class="list__song">
+            <div >
                 <h3>Song List</h3>
                 <hr>
             </div>
             <div id="track-list">
-                <div>
+                <div class=" list__song__tarjeta">
                     <img src="/assets/buenos_genes.jpg" alt="">
                     <div>
                         <p>Buenos Genes</p>
@@ -50,7 +50,7 @@
                         <img src="/assets/trespuntos.svg" alt="">
                     </div>
                 </div>
-                <div>
+                <div class=" list__song__tarjeta">
                     <img src="/assets/Flores_en_Anónimo.jpg" alt="">
                     <div>
                         <p>Flores en Anónimo</p>
@@ -60,7 +60,7 @@
                         <img src="/assets/trespuntos.svg" alt="">
                     </div>
                 </div>
-                <div>
+                <div class=" list__song__tarjeta">
                     <img src="/assets/my_boy.jpg" alt="">
                     <div>
                         <p>My boy</p>
@@ -70,7 +70,7 @@
                         <img src="/assets/trespuntos.svg" alt="">
                     </div>
                 </div>
-                <div>
+                <div class=" list__song__tarjeta">
                     <img src="/assets/Olviame_y_pega_la_vuelta.jpg" alt="">
                     <div>
                         <p>A esa</p>
@@ -80,7 +80,7 @@
                         <img src="/assets/trespuntos.svg" alt="">
                     </div>
                 </div>
-                <div>
+                <div class=" list__song__tarjeta">
                     <img src="/assets/snap_out_of_it.jpg" alt="">
                     <div>
                         <p>Snap Out Of It</p>
