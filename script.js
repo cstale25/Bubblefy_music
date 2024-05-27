@@ -48,11 +48,25 @@
 // console.log (myFuncion(7,5))
 
 
-console.log ( axios )
+const container = document.getElementById('track-list')
 
 axios.get("https://leonardoapi.onrender.com/songs")
     .then((res) => {
         res.data.songs.map((song)=> {
-            document.write(song.title)
+
+            const div = document.createElement('div')
+            div.classList.add('list_song_tarjeta')
+            div.innerHTML = `
+                <img src="/assets/buenos_genes.jpg" alt="">
+                <div>
+                    <p>Buenos Genes</p>
+                    <p>Rels B</p>
+                </div>
+                <div>
+                    <img src="/assets/trespuntos.svg" alt="">
+                </div>
+            `
+            container.appendChild(div)
+            
         })
     })
