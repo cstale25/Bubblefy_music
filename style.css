@@ -105,13 +105,22 @@
     font-size: 13px;
 }
 
+.list__song__tarjeta__tarjeta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
 .reproductor {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky; 
+    bottom: 0; 
+    left: 0;
     background-color: var(--color--barra);
-    border-end-end-radius
-    : 30px ;
     padding: 15px 30px;
+    border-radius: 20px 20px 0px 0px;
 }
 
