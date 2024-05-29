@@ -57,15 +57,34 @@ axios.get("https://leonardoapi.onrender.com/songs")
             const div = document.createElement('div')
             div.classList.add('list__song__tarjeta')
             div.innerHTML = `
-                <img src="/assets/buenos_genes.jpg" alt="">
                 <div>
-                    <p>Buenos Genes</p>
-                    <p>Rels B</p>
-                </div>
+                    <img src="${song.path.front}" alt="">
+                    <div>
+                        <p>${song.title}</p>
+                        <p>${song.author}</p>
+                    </div>
+                </div>    
                 <div>
                     <img src="/assets/trespuntos.svg" alt="">
                 </div>
             `
+            div.addEventListener("click", () => {
+            
+            // Lo que escriba aca va a suceder cuando realice un click    
+
+                document.getElementById
+                ("current-song-title").innerHTML = song.title
+                document.getElementById
+                ("current-song-author").innerHTML = song.author
+
+                document.getElementById
+                ("current-song-img").setAttribute ("src", song.path.front)
+
+                document.getElementById
+                ("current-song-audio").setAttribute ("src", song.path.audio)
+            })
+            
+
             container.appendChild(div)
             
         })
