@@ -1,0 +1,126 @@
+:root {
+    --color--header: #710393;
+    --color--search: #3C014E;
+    --color--barra: #2F013D;
+    --color--lila: #B886C8;
+    --color--blanconoblanco: #F2F2F2;
+    --color--fondo: #1E1E1E;
+}
+
+*{
+    margin: unset;
+    padding: unset;
+    box-sizing: border-box;
+    list-style: none;
+    outline: unset;
+    font-family: serif;
+    color: #F2F2F2;
+
+}
+
+.b {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.icons {
+    width: 32px;
+    height: 32px;
+}
+
+.header {
+    width: 100%;
+    background-color: #3c014ef1;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    font-weight: 500;
+}
+
+.main {
+    background-color: #1E1E1E;
+}
+
+.main img {
+    width: 56px;
+    height: 56px;
+}
+
+.inicio {
+    padding: 40px 20px;
+    font-size: 36px;
+}
+
+.inicio__form button {
+    background-image: url("/assets/search.svg");
+    background-color: transparent ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: solid 2px transparent;
+    height: 32px;
+    width: 32px;
+    transform: translateX(45px);
+    
+}
+
+.inicio__form {
+    display: flex;
+    align-items: center;
+}
+
+.input__detalle {
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px transparent;
+    background-color: var(--color--barra);
+}
+
+
+.list__songbar {
+    padding: 0px 20px;
+    font-size: 24px;
+}
+
+.list__song__tarjeta {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 30px 40px;
+}
+
+.list__song__tarjeta img,
+.reproductor img {
+    border-radius: 12px;
+}
+
+.list__song__tarjeta span,
+.reproductor span {
+    opacity: .65;
+    font-size: 13px;
+}
+
+.list__song__tarjeta__tarjeta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.reproductor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; 
+    bottom: 0; 
+    left: 0;
+    background-color: var(--color--barra);
+    padding: 15px 30px;
+    border-radius: 20px 20px 0px 0px;
+}
+

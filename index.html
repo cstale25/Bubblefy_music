@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubblefy_music</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="reproductor de música, música, lista de reproducción, música sin anuncios, compartir música con amigos">
+    <meta name="description" content="Bubblefy_music es la aplicación perfecta para los amantes de la música que buscan una experiencia auditiva excepcional. Con su interfaz intuitiva, amplias funciones y compatibilidad con una amplia gama de formatos de audio, Bubblefy_music te permite disfrutar de tu música favorita de la forma que más te guste.">
+    <meta name="author" content="Alexandra Bruno">
+    <meta property="og.tittle" content="Sumérgete en un mundo de música con Bubblefy_music"
+    <meta property="og.description" content="Bubblefy_music es la aplicación perfecta para los amantes de la música que buscan una experiencia auditiva excepcional. Con su interfaz intuitiva, amplias funciones y compatibilidad con una amplia gama de formatos de audio, Bubblefy_music te permite disfrutar de tu música favorita de la forma que más te guste.">
+    <meta property="og.url" content="">
+    <meta property="og.image" content="">
+    <link rel="shortcut icon" href="/assets/flor_logo.svg" type="image/x-icon"> 
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <img src="/assets/tresrayas.svg" alt="icon_tres_rayas" class="icons">
+            <p>Discover</p>
+            <img src="/assets/account.svg" alt="icon_perfil" class="icons">
+        </nav>
+    </header>
+    <main class="main">
+        <section class="inicio">
+            <h2>Welcome!</h2>
+            <form action="/" class="inicio__form">
+                <button>
+                </button> 
+                <input type="text"  class="input__detalle">
+            </form>
+        </section>
+        <section>
+            <div class="list__songbar">
+                <h3>Song List</h3>
+                <hr>
+            </div>
+            <div id="track-list">
+                
+            </div>
+        </section>
+        <section class="reproductor">
+            <img src="/assets/la_chama.jpg"  alt="" id="current-song-img">
+            <div>
+                <p><b id="current-song-title">La Chama</b></p>
+                <p><span id="current-song-author">Micro TDH; Mau y Ricky</span></p>
+            </div>
+            <div>
+                <!-- <img src="/assets/play.svg" alt=""> -->
+                <audio src="" controls autoplay id="current-song-audio"></audio>
+            </div>
+        </section>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html> 
