@@ -87,17 +87,19 @@ axios.get("https://leonardoapi.onrender.com/songs")
 
             container.appendChild(div)
             
-            document.getElementById("play"), addEventListener ("click", (e) => {
+        })
 
-                const audio = document.getElementById("current-song-audio")
 
-                if (audio.paused) {
-                    e.target.setAttribute("src", "/assets/play.svg")
-                    audio.play()
-                } else {
-                    e.target.setAttribute("src", "/assets/flor_logo.svg")
-                    audio.pause()
-                }
-            })
+        document.getElementById("play"), addEventListener ("click", () => {
+
+            const audio = document.getElementById("current-song-audio")
+
+            if (audio.paused) {
+                document.getElementById("play").setAttribute("src", "/assets/play.svg")
+                audio.play()
+            } else {
+                document.getElementById("play").setAttribute("src", "/assets/flor_logo.svg")
+                audio.pause()
+            }
         })
     })
